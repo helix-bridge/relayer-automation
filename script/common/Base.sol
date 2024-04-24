@@ -6,8 +6,7 @@ import "@sphinx-labs/contracts/SphinxPlugin.sol";
 
 contract Base is Sphinx, Script {
     function configureSphinx() public override {
-        sphinxConfig.owners = [
-        ];
+        sphinxConfig.owners = [];
         sphinxConfig.orgId = "cluanacaw000111jik4xs4wkl";
         sphinxConfig.threshold = 0;
         sphinxConfig.projectName = "Relayer-Automation";
