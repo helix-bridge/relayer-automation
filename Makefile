@@ -7,8 +7,8 @@ all    :; @forge build
 fmt    :; @forge fmt
 clean  :; @forge clean
 
-propose:; npx sphinx propose ./script/common/Automation.s.sol --networks mainnets
-dry-run:; npx sphinx propose ./script/common/Automation.s.sol --networks mainnets --dry-run
+propose:; npx sphinx propose ./src/common/Automation.s.sol --networks mainnets
+dry-run:; npx sphinx propose ./src/common/Automation.s.sol --networks mainnets --dry-run
 
 sphinx :; @yarn sphinx install
 sync   :; @git submodule update --recursive
