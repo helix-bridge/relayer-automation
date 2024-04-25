@@ -6,7 +6,7 @@ import {Base} from "./common/Base.sol";
 interface III {}
 
 contract Action1 is Base {
-    function run() public sphinx {
-        // your script
-    }
+  function run() public sphinx {
+    // your script
+  }
 }
