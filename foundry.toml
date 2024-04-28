@@ -3,7 +3,7 @@ solc_version = "0.8.17"
 script = 'script'
 test = 'test'
 extra_output = ['storageLayout']
-fs_permissions=[{access="read", path="./out"}, {access="read-write", path="./cache"}]
+fs_permissions = [{ access = "read", path = "./out" }, { access = "read-write", path = "./cache" }]
 allow_paths = ["../.."]
 auto_detect_remappings = false
 libs = ["lib"]
@@ -11,5 +11,7 @@ libs = ["lib"]
 [rpc_endpoints]
 anvil = "http://127.0.0.1:8545"
 polygon = "https://polygon-rpc.com"
-optimism = "https://rpc.ankr.com/optimism	"
+optimism = "https://rpc.ankr.com/optimism"
 arbitrum = "https://arb1.arbitrum.io/rpc"
+darwinia = "https://rpc.darwinia.network"
+ethereum = "https://ethereum-rpc.publicnode.com"

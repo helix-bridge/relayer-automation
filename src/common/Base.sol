@@ -15,8 +15,8 @@ contract Base is Sphinx, Script {
     sphinxConfig.threshold = 2;
     sphinxConfig.projectName = 'Relayer-Automation';
     sphinxConfig.mainnets = [
-          'darwinia',
-          'ethereum',
+//          'darwinia',
+          'polygon',
           'arbitrum'
       ];
   }
