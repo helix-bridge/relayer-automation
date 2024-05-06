@@ -23,4 +23,4 @@
 #       - name: Install Sphinx Solidity Library
 #         run: yarn sphinx install
 #       - name: Propose
-#         run: npx sphinx propose ./script/common/Automation.s.sol --confirm --networks mainnets
+#         run: npx sphinx propose ./src/common/Automation.s.sol --confirm --networks mainnets
