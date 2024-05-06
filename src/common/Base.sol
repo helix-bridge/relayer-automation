@@ -2,9 +2,12 @@
 pragma solidity ^0.8.0;
 
 import {Script} from "forge-std/Script.sol";
+import {stdToml} from "forge-std/StdToml.sol";
 import "@sphinx-labs/contracts/SphinxPlugin.sol";
 
 contract Base is Sphinx, Script {
+  using stdToml for string;
+
   function configureSphinx() public override {
     sphinxConfig.owners = [
           0x570FCA2c6f902949dBb90664Be5680fEc94A84f6, // jane
@@ -16,8 +19,9 @@ contract Base is Sphinx, Script {
     sphinxConfig.projectName = 'Relayer-Automation';
     sphinxConfig.mainnets = [
 //          'darwinia',
-          'polygon',
+//          'polygon',
           'arbitrum'
       ];
   }
+
 }
